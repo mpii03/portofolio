@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: url('background.jpg') center/cover fixed;
+    color: #4e342e;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    background: #c7b7a3;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+}
+
+/* HOME */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    width: 350px;
+    transform: rotate(-6deg);
+}
+
+.title h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 110px;
+    font-weight: normal;
+}
+
+.title h2 {
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    display: inline-block;
+    background: #c7b7a3;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 0 30px 30px 0;
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* ABOUT */
+.about-box {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(214, 200, 182, 0.95);
+    padding: 35px;
+    border-radius: 25px;
+    font-size: 28px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.about-box p {
+    margin-bottom: 20px;
+}
+
+/* SONGS */
+.songs-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.song-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.song-card {
+    background: rgba(214, 200, 182, 0.95);
+    padding: 20px;
+    border-radius: 20px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.song-card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.song-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.song-card p {
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+/* SOCIAL */
+.social {
+    text-align: left;
+    margin-top: 60px;
+}
+
+.social .section-title {
+    margin-top: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 90px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
+}
+
+.footer-badge {
+    display: inline-block;
+    background: #c7b7a3;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 999px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 24px;
+    }
+
+    .title h1 {
+        font-size: 75px;
+        text-align: center;
+    }
+
+    .title h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .songs-title {
+        font-size: 60px;
+    }
+
+    .about-box {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
