@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#social">social</a>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="home-container">
+            <img src="mpii-removebg-preview.png" alt="Profile" class="profile-photo">
+
+            <div class="title">
+                <h1>Mpi's</h1>
+                <h2>PORTOFOLIO</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2 class="section-title">about</h2>
+
+        <div class="about-box">
+            <p>
+                Hi! I'm mpii. I love singing and listening to music because it makes me
+                feel happy and relaxed. My favorite food is dim sum, and I really like
+                capybaras because they're cute and chill.
+            </p>
+
+            <p>
+                My biggest wish in the future is to go for Umrah with my family.
+                I hope I can achieve it step by step, make my family proud,
+                and live a happy life.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAVORITE SONGS -->
+    <section class="songs">
+        <h2 class="songs-title">Favorite songs</h2>
+
+        <div class="song-container">
+
+            <div class="song-card" onclick="playSong('song1')">
+                <img src="bulan.jpeg" alt="Song 1">
+                <p>Bulan Bintang<br>Garis Menyilang</p>
+                <audio id="song1" src="bulan.aac"></audio>
+            </div>
+
+            <div class="song-card" onclick="playSong('song2')">
+                <img src="semusim.jpeg" alt="Song 2">
+                <p>Semusim</p>
+                <audio id="song2" src="semusim.aac"></audio>
+            </div>
+
+            <div class="song-card" onclick="playSong('song3')">
+                <img src="soulmate.jpeg" alt="Song 3">
+                <p>Soulmate</p>
+                <audio id="song3" src="soulmate.aac"></audio>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section id="social" class="social">
+        <h2 class="section-title">social</h2>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/its_fieaa?igsh=MTkzemNxNDhrZHk0Mg==" target="_blank">
+                <img src="ig.jpeg" alt="Instagram">
+            </a>
+
+            <a href="https://discord.gg/8xebvnUm" target="_blank">
+                <img src="dc.jpeg" alt="Discord">
+            </a>
+
+            <a href="https://www.roblox.com/share?code=21ee1e63cbb1ca4db231f26da2f90a04&type=Profile&source=ProfileShare&stamp=1778352358690" target="_blank">
+                <img src="roblox.jpeg" alt="Roblox">
+            </a>
+        </div>
+
+        <div class="footer-badge">
+            mpii's portofolio
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
